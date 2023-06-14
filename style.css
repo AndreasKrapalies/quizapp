@@ -1,0 +1,42 @@
+body{
+    /* Diese Hintergrundfarbe haben wir hinzugefügt, da unser Bootstrap
+    bereits ein CSS Element mit dem Namen container hat, welcher
+    links und rechts einen weißen Rand hat. Damit wir den weißen Rand
+    weg bekommen, haben wir dem Body nochmal die gleiche Hintergrundfarbe
+    wie unserem container gegeben. */
+    background-color: black !important;
+}
+.container{
+    min-height: 100vh;
+    /* Mit 1important nimmt er unser Style und nicht das von Bootstrap */
+    background-color: black !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.question-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    padding-top: 12px;
+}
+.button{
+    border-radius: 5px;
+}
+.card{
+    max-width: 25rem;
+}
+
+.quiz-answer-card:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.2);
+}
+.wrongAnswer{
+    background-color: lightcoral;
+}
+
+.rightAnswer{
+    background-color: lightgreen;
+}
