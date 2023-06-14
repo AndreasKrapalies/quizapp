@@ -63,9 +63,9 @@ function answer(selection){
     }
     let selectedQuestionNumber = selection.slice(-1);
     if(selectedQuestionNumber==questions[currentQuestion]["right-answer"]){
-        document.getElementById(selection).classList.add('rightAnswer');
+        document.getElementById(selection).parentNode.classList.add('bg-success');
     }
     else{
-        document.getElementById(selection).classList.add('wrongAnswer');
+        document.getElementById(selection).classList.add('bg-danger');
     }
 }
