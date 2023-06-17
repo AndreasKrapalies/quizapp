@@ -29,36 +29,43 @@
     <div class="container">
         <!-- Diese Karte haben wir von Bootstrap und dort aus de Kategorie Card -->
         <div class="card">
-            <img src="img/question-mark.jpg" class="card-img-top">
-            <div class="card-body">
+            <img id="card-pic" src="img/question-mark.jpg" class="card-img-top">
+            <div class="card-body" id="endScreen" style="display: none;">
+
+            </div>
+            <div id="questionBody" class="card-body">
                 <h5 id="questiontext" class="card-title"></h5>
+                <div class="progress">
+                    <div class="progress-bar" id="progress-bar" role="progressbar" style="width: 0%;">0%</div>
+                </div>
                 <!-- Für mb-2 habe ich bei google. geschaut.
                 Nach bootstrap margin bottom.
-            Und dort findet man dann ein paar Seiten, wo erklärt wird,
-        welche CSS Klassen von Bootstrap man nehmen kann. -->
+                Und dort findet man dann ein paar Seiten, wo erklärt wird,
+                welche CSS Klassen von Bootstrap man nehmen kann. -->
                 <div class="card quiz-answer-card mb-2" onclick="answer('answer_1')">
                     <div id="answer_1" class="card-body">
-                        
+
                     </div>
                 </div>
                 <div class="card quiz-answer-card mb-2" onclick="answer('answer_2')">
                     <div id="answer_2" class="card-body">
-                        
+
                     </div>
                 </div>
                 <div class="card quiz-answer-card mb-2" onclick="answer('answer_3')">
                     <div id="answer_3" class="card-body">
-                        
+
                     </div>
                 </div>
                 <div class="card quiz-answer-card mb-2" onclick="answer('answer_4')">
                     <div id="answer_4" class="card-body">
-                        
+
                     </div>
                 </div>
                 <div class="question-footer">
-                    <span><b>1</b> von <b id="questions-amount"></b> Fragen</span>
-                    <button type="button" class="btn btn-dark">Nächste Frage</button>
+                    <span><b id="current-question-number"> </b> von <b id="questions-amount"> </b> Fragen</span>
+                    <button onclick="nextQuestion()" id="nextQuestion" type="button" class="btn btn-dark"
+                        enabled>Nächste Frage</button>
                 </div>
             </div>
         </div>

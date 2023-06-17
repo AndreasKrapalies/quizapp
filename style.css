@@ -37,3 +37,16 @@ body{
 .bg-success, .bg-danger{
     color: white !important;
 }
+#endScreen{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+}
+#endScreen p{
+    font-size: 38px;
+}
+.progress{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
