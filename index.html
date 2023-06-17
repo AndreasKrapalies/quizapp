@@ -42,30 +42,29 @@
                 Nach bootstrap margin bottom.
                 Und dort findet man dann ein paar Seiten, wo erklärt wird,
                 welche CSS Klassen von Bootstrap man nehmen kann. -->
-                <div class="card quiz-answer-card mb-2" onclick="answer('answer_1')">
+                <div class="card answer-fields-hover mb-2" onclick="answer('answer_1')">
                     <div id="answer_1" class="card-body">
 
                     </div>
                 </div>
-                <div class="card quiz-answer-card mb-2" onclick="answer('answer_2')">
+                <div class="card answer-fields-hover mb-2" onclick="answer('answer_2')">
                     <div id="answer_2" class="card-body">
 
                     </div>
                 </div>
-                <div class="card quiz-answer-card mb-2" onclick="answer('answer_3')">
+                <div class="card answer-fields-hover mb-2" onclick="answer('answer_3')">
                     <div id="answer_3" class="card-body">
 
                     </div>
                 </div>
-                <div class="card quiz-answer-card mb-2" onclick="answer('answer_4')">
+                <div class="card answer-fields-hover mb-2" onclick="answer('answer_4')">
                     <div id="answer_4" class="card-body">
 
                     </div>
                 </div>
                 <div class="question-footer">
                     <span><b id="current-question-number"> </b> von <b id="questions-amount"> </b> Fragen</span>
-                    <button onclick="nextQuestion()" id="nextQuestion" type="button" class="btn btn-dark"
-                        enabled>Nächste Frage</button>
+                    <button onclick="nextQuestion()" id="nextCard" type="button" class="btn btn-dark" enabled></button>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-body{
+body {
     /* Diese Hintergrundfarbe haben wir hinzugefügt, da unser Bootstrap
     bereits ein CSS Element mit dem Namen container hat, welcher
     links und rechts einen weißen Rand hat. Damit wir den weißen Rand
@@ -6,7 +6,8 @@ body{
     wie unserem container gegeben. */
     background-color: black !important;
 }
-.container{
+
+.container {
     min-height: 100vh;
     /* Mit 1important nimmt er unser Style und nicht das von Bootstrap */
     background-color: black !important;
@@ -14,7 +15,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-.question-footer{
+
+.question-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,31 +24,41 @@ body{
     border-top: 1px solid rgba(0, 0, 0, 0.4);
     padding-top: 12px;
 }
-.button{
+
+.button {
     border-radius: 5px;
 }
-.card{
+
+.card {
     max-width: 25rem;
 }
 
-.quiz-answer-card:hover{
+.answer-fields-hover:hover {
     cursor: pointer;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.bg-success, .bg-danger{
+.answer-fields-blocked {
+    pointer-events: none;
+}
+
+.bg-success,
+.bg-danger {
     color: white !important;
 }
-#endScreen{
+
+#endScreen {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap:15px;
+    gap: 15px;
 }
-#endScreen p{
+
+#endScreen p {
     font-size: 38px;
 }
-.progress{
+
+.progress {
     margin-top: 20px;
     margin-bottom: 20px;
 }
