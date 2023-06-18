@@ -6,7 +6,15 @@ body {
     wie unserem container gegeben. */
     background-color: black !important;
 }
+body::-webkit-scrollbar{
+    display: none;
+  }
 
+.container-fluid{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
 .container {
     min-height: 100vh;
     /* Mit 1important nimmt er unser Style und nicht das von Bootstrap */
